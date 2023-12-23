@@ -1,12 +1,10 @@
 .feedback{
-    /* width: Hug (170px);
-    height: Hug (47px); */
-    /* top: 13px;
-    left: 1238px; */
-    padding: 10px, 16px, 10px, 16px;
-    border-radius: 6px;
-    border: 1px;
-    gap: 10px;
+    width: 170px;
+    height: 47px;
+    padding: 10px 16px 10px 16px;
+    border-radius: 12px;
+    border: 1px;    
     color: var(--primary-color);
     background-color: var(--primary-bg-color);
 }
+

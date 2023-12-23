@@ -1,8 +1,26 @@
-.search{
+.searchbtn{
+    width: 66px;
+    height: 52px;
+    border-radius: 0px 8px 8px 0px;
+    border: 1px solid black;
+    background-color: var(--primary-text-color);  
+    align-self: center;  
+
+}
+
+
+.input{
     width: 568px;
+    height: inherit;
+    align-self: center;
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.design{
     height: 48px;
-    top: 13px;
-    left: 436px;
-    border-radius: 0px, 8px, 8px, 0px;
-    border: 1px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }

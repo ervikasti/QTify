@@ -6,7 +6,7 @@ import { Search } from "../Search/Search";
 function Navbar(){
     return(
         <div className={styles.navbar}>
-            <Search />
+            <Search placeholder={'Search a album of your choice'}/>
             <FeedbackBtn>Give Feedback</FeedbackBtn>
         </div>
        
