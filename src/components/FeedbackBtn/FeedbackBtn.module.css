@@ -7,5 +7,6 @@
     color: var(--primary-color);
     background-color: var(--primary-bg-color);
     cursor: pointer;
+    font-family: 'Poppins';
 }
 
