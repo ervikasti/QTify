@@ -6,5 +6,6 @@
     border: 1px;    
     color: var(--primary-color);
     background-color: var(--primary-bg-color);
+    cursor: pointer;
 }
 

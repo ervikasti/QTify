@@ -5,6 +5,7 @@
     border: 1px solid black;
     background-color: var(--primary-text-color);  
     align-self: center;  
+    cursor: pointer;
 
 }
 

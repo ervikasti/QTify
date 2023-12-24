@@ -1,0 +1,26 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 212px;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+.hero_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: center;
+
+}
+
+.hero_img{
+    height: 212px;
+}
