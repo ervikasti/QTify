@@ -4,6 +4,9 @@ import styles from './Logo.module.css';
 
 export function Logo (){
     return(
-        <img src={logo} alt="Qtify" className={styles.logo}/>
+        <div className={styles.container}>
+             <img src={logo} alt=";ogo" className={styles.logo}/>
+        </div>
+       
     )
 }

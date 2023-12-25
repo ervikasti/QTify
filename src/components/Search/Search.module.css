@@ -11,16 +11,16 @@
 
 
 .input{
-    width: 568px;
+    width: 35.5rem;
     height: inherit;
     align-self: center;
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
     border: 1px solid black;
-    padding-left: 10px;
+    padding-left: 0.625rem;
 }
 
 .design{
-    height: 48px;
+    height:3rem;
     display: flex;
     justify-content:center;
     align-items: center;
