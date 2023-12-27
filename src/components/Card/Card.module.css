@@ -1,26 +1,54 @@
 .card{
+    display: flex;
+    flex-direction: column;
     width:159px;
     height:232px;
-    gap: 6px;
     color:var(--primary-text-color);
+    /* border: 2px solid blue; */
+    margin: 5px;
 }
 
 .card_detail{
+    display: flex;
+    flex-direction: column;
     width: 159px;
     height: 205px;
-    border-radius: 10px 10px 0px 0px;
-    border: 1px solid white;
+    border-radius: 10px;
+    /* border: 1px solid white; */
     background-color: white;
+    align-items: center;
+    /* justify-content: space-around; */
 
 }
 
 .card_detail_img {
     width: 159px;
     height: 170px;
-    border-radius: 10px, 10px, 0px, 0px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
 }
 
-.card_detail_follow {
+.banner{
+    align-self: flex-start;
     
-    
+}
+
+.chip{
+    background-color: var(--primary-bg-color) !important;
+    color: var(--primary-text-color) !important;
+    height: 15px; 
+    text-align: left;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.card_para{
+    margin: 0px;
+    align-self: flex-start;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border: 0px;
+    font-size: small;
 }

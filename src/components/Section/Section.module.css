@@ -1,0 +1,27 @@
+.section_title{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.section{
+    margin: 5px;
+}
+
+.carousel{
+    margin: 2%;
+}
+
+.section_btn{
+    background-color: var(--primary-bg-color);
+    border: 0px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
