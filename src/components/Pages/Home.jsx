@@ -9,6 +9,7 @@ export const Home = () => {
     const [albumArr, setalbumArr] = useState([]);
     const [albumNew, setalbumNew] = useState([]);
     const [albumSongs, setalbumSongs] = useState([]);
+    const [songSCategory, setsongSCategory] = useState([]);
 
 
     const fetchTopAlbum = async () =>{
@@ -40,7 +41,7 @@ export const Home = () => {
         try {
             const albumData = await axios.get('https://qtify-backend-labs.crio.do/songs');
             setalbumSongs(albumData.data);  
-            // console.log(albumData);
+            // console.log(albumData.data);
             
         } catch (error) {
             console.log(error);
@@ -48,11 +49,28 @@ export const Home = () => {
         } 
     }
 
+
+
+    const getSongCategory = async ()=> {
+        try {
+            const category = await axios.get('https://qtify-backend-labs.crio.do/genres');
+            setsongSCategory(category.data);  
+            // console.log(songSCategory.data);
+            
+        } catch (error) {
+            console.log(error);
+            return [];
+        } 
+    }
+    
+
+
     useEffect( ()=> {
         fetchTopAlbum();
         fetchNewAlbum();
         fetchSong();
-        // console.log(albumArr);
+        getSongCategory();
+        
     },[])
 
     return (
@@ -61,7 +79,7 @@ export const Home = () => {
         {/* <Card /> */}
         <Section type="Top Albums" data={albumArr}/>
         <Section type="New Albums" data={albumNew}/>
-        <Section type="Songs" data={albumNew}/>
+        <Section type="Songs" category={songSCategory} data={albumSongs}/>
         </>
     );
 }
