@@ -33,7 +33,7 @@ export default function Section( {data,type,category} ){
         
         setSongData(data); 
         }   
-    });
+    },[data]);
 
 
     
@@ -69,7 +69,7 @@ export default function Section( {data,type,category} ){
 
    
     const handleClickGenre = (e) => {
-        console.log(e.target.innerText);
+        // console.log(e.target.innerText);
         if(e.target.innerText === "ROCK"){
             const newArr = [...data];
             // console.log(newArr);
@@ -153,11 +153,10 @@ export default function Section( {data,type,category} ){
                             {
                                 data.map( (e) => 
                                     (   
-                                        <div key={e.id}> 
-                                            <SwiperSlide>
-                                                <Card type={type} data={e}/>
+                                      
+                                            <SwiperSlide key={e.id}>
+                                                <Card type={type} data={e} />
                                             </SwiperSlide>
-                                        </div>
                                         
                                     )
                                 )
@@ -170,11 +169,11 @@ export default function Section( {data,type,category} ){
                         {
                             data.map( (e) => 
                                 (   
-                                    <div key={e.id}> 
-                                        <Grid item>
+                                    
+                                        <Grid item key={e.id}>
                                             <Card data={e}/>
                                         </Grid>
-                                    </div> 
+                                    
                                 )
                             )
                         }
@@ -196,8 +195,8 @@ export default function Section( {data,type,category} ){
                         >
                             <Tab className={styles.songs_tab} label="All"  onClick={handleClickGenre} />
                             {
-                                category.data.map((label)=>(
-                                    <Tab  className={styles.songs_tab} label={label.label} onClick={handleClickGenre} />
+                                category.data.map((label,i)=>(
+                                    <Tab  className={styles.songs_tab} label={label.label} onClick={handleClickGenre} key={i}/>
                                 ))  
                             }
                         </Tabs>
@@ -217,11 +216,11 @@ export default function Section( {data,type,category} ){
                                 {
                                     songData.map( (e) => 
                                         (   
-                                            <div key={e.id}> 
-                                                <SwiperSlide>
+                                           
+                                                <SwiperSlide key={e.id}>
                                                     <Card data={e} type="song"/>
                                                 </SwiperSlide>
-                                            </div>
+                                          
                                             
                                         )
                                     )
